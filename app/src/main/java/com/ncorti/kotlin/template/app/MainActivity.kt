@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // TODO Improve this
         binding.buttonCompute.setOnClickListener {
             val input = binding.editTextFactorial.text.toString().toInt()
             val result = FactorialCalculator.computeFactorial(input).toString()
