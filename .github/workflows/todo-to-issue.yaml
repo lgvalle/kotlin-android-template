@@ -1,0 +1,22 @@
+# This action will convert newly committed TODO comments to GitHub issues on push.
+# It will also optionally close the issues if the TODOs are removed in a future commit.
+
+# https://github.com/marketplace/actions/todo-to-issue
+
+name: todo-to-issue
+on: ["workflow_dispatch"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      
+    steps:
+      - uses: actions/checkout@master
+      - name: "TODO to Issue"
+        uses: "alstr/todo-to-issue-action@v4.0.9"
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
+        id: "todo"
