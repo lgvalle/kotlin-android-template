@@ -17,3 +17,4 @@ jobs:
       - name: "TODO to Issue"
         uses: "alstr/todo-to-issue-action@v4.0.9"
         id: "todo"
+        token: ${{ secrets.GITHUB_TOKEN }}
