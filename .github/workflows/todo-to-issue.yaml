@@ -4,7 +4,7 @@
 # https://github.com/marketplace/actions/todo-to-issue
 
 name: "TODO to Issue"
-on: ["push"]
+on: ["pull_request"]
 
 jobs:
   build:
