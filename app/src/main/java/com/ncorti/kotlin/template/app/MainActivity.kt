@@ -7,7 +7,6 @@ import com.ncorti.kotlin.template.app.databinding.ActivityMainBinding
 import com.ncorti.kotlin.template.library.FactorialCalculator
 import com.ncorti.kotlin.template.library.android.NotificationUtil
 
-// TODO Improve the whole Activity AND EDIT THE TODO
 class MainActivity : AppCompatActivity() {
 
     private val notificationUtil: NotificationUtil by lazy { NotificationUtil(this) }
