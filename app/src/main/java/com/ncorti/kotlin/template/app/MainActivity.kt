@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // TODO Improve the whole click listener
         binding.buttonCompute.setOnClickListener {
             val input = binding.editTextFactorial.text.toString().toInt()
             val result = FactorialCalculator.computeFactorial(input).toString()
 
-            // TODO Improve text result
             binding.textResult.text = result
             binding.textResult.visibility = View.VISIBLE
 
