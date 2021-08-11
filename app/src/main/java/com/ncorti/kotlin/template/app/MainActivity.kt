@@ -7,6 +7,7 @@ import com.ncorti.kotlin.template.app.databinding.ActivityMainBinding
 import com.ncorti.kotlin.template.library.FactorialCalculator
 import com.ncorti.kotlin.template.library.android.NotificationUtil
 
+// TODO Improve the whole Activity
 class MainActivity : AppCompatActivity() {
 
     private val notificationUtil: NotificationUtil by lazy { NotificationUtil(this) }
@@ -17,7 +18,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // TODO Improve the whole click listener
         binding.buttonCompute.setOnClickListener {
             val input = binding.editTextFactorial.text.toString().toInt()
             val result = FactorialCalculator.computeFactorial(input).toString()
