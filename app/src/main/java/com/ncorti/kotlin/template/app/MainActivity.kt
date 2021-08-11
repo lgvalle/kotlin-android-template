@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             val input = binding.editTextFactorial.text.toString().toInt()
             val result = FactorialCalculator.computeFactorial(input).toString()
 
-            // TODO Fix txt result
+            // TODO Improve text result
             binding.textResult.text = result
             binding.textResult.visibility = View.VISIBLE
 
