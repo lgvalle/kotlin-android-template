@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // TODO(lgvalle) Fix the binding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
